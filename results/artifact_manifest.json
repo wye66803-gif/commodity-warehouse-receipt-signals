@@ -1,0 +1,174 @@
+{
+  "manifest_version": 1,
+  "frozen_research_version": "v1.0",
+  "artifacts": [
+    {
+      "path": "results/formal_v1/final_dual_combo_daily.csv",
+      "sha256": "c726d80d5e3b73fc3df056a9bf5f1e0b3dfe954457114900312fd53c49f296f6",
+      "bytes": 2146207,
+      "generator": "scripts/run_formal.py -> src/formal_strategy.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/formal_v1/final_dual_combo_metrics.csv",
+      "sha256": "0a4c242ae658283f95f7626bc31971318c183911c7da5b7c78609f51fbafd87e",
+      "bytes": 6640,
+      "generator": "scripts/run_formal.py -> src/formal_strategy.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/formal_v1/final_dual_combo_nav.png",
+      "sha256": "65d1f682676198163fa29039a1e683ed851d0f4a99b75d7bff79552768439056",
+      "bytes": 39426,
+      "generator": "scripts/run_formal.py -> src/formal_strategy.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/formal_v1/final_dual_combo_summary.json",
+      "sha256": "3ec90a51832164acf6f7c0a7cff87c25d4159dc216d559c9925471bde48e3cde",
+      "bytes": 1017,
+      "generator": "scripts/run_formal.py -> src/formal_strategy.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/formal_v1/final_dual_combo_train_validation.csv",
+      "sha256": "fa8877578c8a5f4318e225f34339a8f8482dde8317070ff99b0a3ee9c810ee6d",
+      "bytes": 2474,
+      "generator": "scripts/run_formal.py -> src/formal_strategy.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/weight_selection_v1/dual_combo_best_daily.csv",
+      "sha256": "4edac8bc48369ad7abb7c9be82686f7fe0c1fe7a2a6ef05f99f0a9f8cfa618c8",
+      "bytes": 421311,
+      "generator": "scripts/run_weight_selection.py -> src/weight_selection.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/weight_selection_v1/dual_combo_leaderboard.csv",
+      "sha256": "7920bc5b360216c0e24fb97325dc7485df2a5821e33bd621ff5e4b088c306864",
+      "bytes": 31697,
+      "generator": "scripts/run_weight_selection.py -> src/weight_selection.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/weight_selection_v1/dual_combo_nav_compare.png",
+      "sha256": "94bb92bf1fb222865e689e724ae138df023609e945bd78850f118e533aa49c5b",
+      "bytes": 30567,
+      "generator": "scripts/run_weight_selection.py -> src/weight_selection.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/weight_selection_v1/dual_combo_summary.json",
+      "sha256": "5589feadb056b630cd65589752a83304d9d7570b3d08bb08ff7f36d860cf6227",
+      "bytes": 3029,
+      "generator": "scripts/run_weight_selection.py -> src/weight_selection.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/weight_selection_v1/dual_combo_train_validation.csv",
+      "sha256": "55bba22b6b95ba2edc0973c7c6063b44a5b9295b64a81005ec6127afa5e52a53",
+      "bytes": 5523,
+      "generator": "scripts/run_weight_selection.py -> src/weight_selection.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/baseline_consistency.json",
+      "sha256": "c54260520f29e0000dd69296d7f86d378a60ad7ac5e22d287a7c19eeed60342e",
+      "bytes": 331,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/rebalance_phase.csv",
+      "sha256": "77a8a4d5b437faea5c77f213244a8c36f5b237cf8237dd929e42d337fa0f3c12",
+      "bytes": 34053,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/rebalance_phase_validation_heatmap.png",
+      "sha256": "503b8bf92e7a1bc4c09e494f3e5ecff4a81ccffccec09129ff4d8a7817b015ee",
+      "bytes": 31180,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/robustness_summary.json",
+      "sha256": "8d901705d59e9727d693237d5d18810fe11100f01d810cd5a1ce5f4e2e226c56",
+      "bytes": 3986,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/sleeve_correlation.csv",
+      "sha256": "c1e1e0a11af634d344f5aadbf94632804720c02d1cc51043ca925b6660de1669",
+      "bytes": 2181,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/sleeve_correlation_rolling.csv",
+      "sha256": "3b33396ce01c42df24a8791ba8219c3846c70c4870b9167f0ab23209209faf02",
+      "bytes": 166485,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/sleeve_correlation_rolling.png",
+      "sha256": "eca57c6ba9475ad7db29b974750b1b18cfa049263f7bbbcbe603c2ecd4f335f0",
+      "bytes": 37812,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/symbol_contribution.csv",
+      "sha256": "375d30c0d225b8069588611276f19025a689feb6a4d3537fc7994e0afabb6ee6",
+      "bytes": 4017,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/symbol_contribution_top.png",
+      "sha256": "b8a2a267bf250cf316810bac4ccc3607cc6d1585b69546a8770cfc3355ef51fb",
+      "bytes": 23205,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/weight_plateau.csv",
+      "sha256": "c7b4d98128e90459e022d2831e19891ee6371156945c4b211d1bf90ff88fae85",
+      "bytes": 5416,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    },
+    {
+      "path": "results/robustness_v1/weight_plateau_sharpe.png",
+      "sha256": "c0e6cb25b3c4932a24484d24ae9681f8630fe07bd784d0a9c9d0f2af91cf040c",
+      "bytes": 19665,
+      "generator": "scripts/run_robustness.py -> src/robustness.py",
+      "config": "configs/v1.0.json",
+      "data_sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "version": "v1.0",
+  "status": "frozen",
+  "execution_lag_days": 1,
+  "portfolio": {
+    "v4_weight": 0.55,
+    "diagnostic_weight": 0.45,
+    "cross_section_quantile": 0.4,
+    "weight_rebalance_days": 20,
+    "scale_rebalance_days": 63,
+    "absolute_symbol_weight_cap": 0.08
+  },
+  "selection": {
+    "metric": "gross_sharpe",
+    "return_label": "gross",
+    "grid_start": 0.0,
+    "grid_end": 1.0,
+    "grid_step": 0.05,
+    "training_start": "2018-01-01",
+    "training_end": "2021-12-31",
+    "endpoint_rule": "return start and next-trading-day endpoint must both be within training"
+  },
+  "validation": {
+    "start": "2022-01-01",
+    "end": "2025-12-31"
+  },
+  "official_reporting_cost": "5bp_with_roll_proxy",
+  "robustness_role": "The 5bp + roll-proxy plateau is post-freeze evidence and does not re-select the 55/45 weight."
+}

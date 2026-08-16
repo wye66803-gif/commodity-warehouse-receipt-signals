@@ -1,0 +1,12 @@
+{
+  "rows": 1941,
+  "reference_rows": 1941,
+  "start_date": "2018-01-02",
+  "end_date": "2025-12-30",
+  "dates_match": true,
+  "rows_match": true,
+  "max_abs_diff": 9.99227827216953e-17,
+  "tolerance": 1e-12,
+  "passed": true,
+  "formal_daily_sha256": "c726d80d5e3b73fc3df056a9bf5f1e0b3dfe954457114900312fd53c49f296f6"
+}

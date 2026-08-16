@@ -1,0 +1,39 @@
+{
+  "manifest_version": 1,
+  "research_results_publication_status": "Confirmed by the supplying research instructor.",
+  "input_data_redistribution_status": "NOT REDISTRIBUTED",
+  "license_scope_note": "Permission to publish the research results is separate from redistribution rights for the underlying market data, so the full historical input is intentionally excluded.",
+  "formal_research_data": true,
+  "files": {
+    "warehouse_receipts_standardized.csv": {
+      "description": "Private standardized warehouse-receipt and close observations used to generate frozen v1.0 results.",
+      "availability": "private research input; not included in the public repository",
+      "included_in_public_repository": false,
+      "source_note": "Supplied by the research instructor. The instructor constructed the continuous futures price series from CTP market data using a custom dominant-contract stitching process.",
+      "sha256": "b448dc7daae786eca901572f1e4bb36ac511797b88a2e2f0af689652d9fe5256",
+      "rows": 69108,
+      "symbols": 44,
+      "date_start": "2018-01-02",
+      "date_end": "2025-12-31",
+      "schema": {
+        "id": "commodity symbol string",
+        "datetime": "observation date, YYYY-MM-DD",
+        "close": "standardized research close, numeric",
+        "on_warrant": "standardized warehouse receipt quantity, numeric"
+      }
+    },
+    "symbol_mapping.csv": {
+      "description": "Clean UTF-8 symbol/name/exchange mapping.",
+      "source_public_name": "approved source workbook (not redistributed)",
+      "transformation": "selected three research fields; trimmed whitespace; removed Office container metadata",
+      "sha256": "8eae793b7e959e5464936093acb1e4bec66daedf76dcbc1f7fe2d528b4e6c5b7",
+      "rows": 44,
+      "schema": {
+        "symbol": "commodity symbol string",
+        "symbol_name": "commodity name",
+        "exchange": "listing exchange"
+      }
+    }
+  },
+  "synthetic_fixture_note": "Synthetic observations are generated only in tests/conftest.py for tests and CI; they are not formal research data or evidence for the frozen results."
+}

@@ -1,0 +1,75 @@
+{
+  "sample_start": "2018-01-02",
+  "sample_end": "2025-12-30",
+  "selection_metric": "gross_sharpe",
+  "selection_return_label": "gross",
+  "selection_period": "2018-01-01 through 2021-12-31 strict endpoint",
+  "selection_grid_step": 0.05,
+  "selection_inputs": "tracked formal sleeve builders",
+  "formal_parameter_source": "strict-train gross Sharpe grid only",
+  "exploratory_leaderboard_scope": "full sample descriptive only; does not select or overwrite v1.0",
+  "frozen_weight_v4": 0.55,
+  "frozen_weight_diagnostic": 0.45,
+  "official_cost_plateau_role": "post-freeze robustness only",
+  "common_trading_days": 1941,
+  "best_gross_method": "fixed_weight_grid",
+  "best_gross_sharpe": 2.2998831198317227,
+  "best_gross_weight_v4": 0.6,
+  "best_gross_weight_diag": 0.4,
+  "best_net2bp_method": "fixed_weight_grid",
+  "best_net2bp_sharpe": 2.2135136072788333,
+  "best_practical_method": "fixed_weight_grid",
+  "best_roll_proxy_sharpe": 1.950218303180045,
+  "best_practical_weight_v4": 0.6,
+  "best_practical_weight_diag": 0.4,
+  "train_selected_weight": 0.55,
+  "train_selected_weight_diag": 0.44999999999999996,
+  "validation_sharpe": 1.8388412730029007,
+  "best_validation_method": "train_selected_fixed_weight",
+  "best_validation_weight_v4": 0.55,
+  "best_validation_weight_diag": 0.44999999999999996,
+  "v4_gross_sharpe": 1.5901425112257992,
+  "diagnostic_gross_sharpe": 1.6088343123728608,
+  "correlation_gross": -0.03352241780396686,
+  "correlation_net_2bp": -0.033579814696605106,
+  "reached_gross_sharpe_2": true,
+  "return_column_fallbacks": {
+    "gross": {
+      "v4_column": "ret_gross",
+      "diagnostic_column": "ret_gross",
+      "v4_fallback": false,
+      "diagnostic_fallback": false
+    },
+    "net_2bp_strategy_only": {
+      "v4_column": "ret_2bp_strategy_only",
+      "diagnostic_column": "ret_2bp_strategy_only",
+      "v4_fallback": false,
+      "diagnostic_fallback": false
+    },
+    "net_5bp_strategy_only": {
+      "v4_column": "ret_5bp_strategy_only",
+      "diagnostic_column": "ret_5bp_strategy_only",
+      "v4_fallback": false,
+      "diagnostic_fallback": false
+    },
+    "net_10bp_strategy_only": {
+      "v4_column": "ret_10bp_strategy_only",
+      "diagnostic_column": "ret_10bp_strategy_only",
+      "v4_fallback": false,
+      "diagnostic_fallback": false
+    },
+    "net_2bp_with_roll_proxy": {
+      "v4_column": "ret_2bp_with_roll_proxy",
+      "diagnostic_column": "ret_2bp_with_roll_proxy",
+      "v4_fallback": false,
+      "diagnostic_fallback": false
+    },
+    "net_5bp_with_roll_proxy": {
+      "v4_column": "ret_5bp_with_roll_proxy",
+      "diagnostic_column": "ret_5bp_with_roll_proxy",
+      "v4_fallback": false,
+      "diagnostic_fallback": false
+    }
+  },
+  "research_judgment": "Combining long-horizon warrant scarcity and short-cycle warrant shock improves the pure warrant strategy to gross Sharpe above 2, but validation and cost-stress results should be checked before practical use."
+}

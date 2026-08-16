@@ -1,0 +1,100 @@
+{
+  "baseline_full_sharpe": 1.9402002474871782,
+  "baseline_validation_sharpe": 1.430109028724725,
+  "baseline_consistency": {
+    "rows": 1941,
+    "reference_rows": 1941,
+    "start_date": "2018-01-02",
+    "end_date": "2025-12-30",
+    "dates_match": true,
+    "rows_match": true,
+    "max_abs_diff": 9.99227827216953e-17,
+    "tolerance": 1e-12,
+    "passed": true,
+    "formal_daily_sha256": "c726d80d5e3b73fc3df056a9bf5f1e0b3dfe954457114900312fd53c49f296f6"
+  },
+  "weight_plateau": {
+    "train_best_weight": 0.55,
+    "baseline_weight": 0.55,
+    "baseline_train_rank": 1,
+    "neighboring_weights_results": {
+      "0.50": {
+        "train_2018_2021_strict": 2.371164590559369,
+        "validation_2022_2025": 1.3845850609758854,
+        "full_sample": 1.9107931950446397
+      },
+      "0.55": {
+        "train_2018_2021_strict": 2.3832091996958145,
+        "validation_2022_2025": 1.4301090287247251,
+        "full_sample": 1.940200247487178
+      },
+      "0.60": {
+        "train_2018_2021_strict": 2.3720326983425237,
+        "validation_2022_2025": 1.4616093225751874,
+        "full_sample": 1.950218303180045
+      }
+    },
+    "selection_note": "Diagnostics use the frozen official 5bp+roll convention; no full-sample or validation result is used to change v1.0."
+  },
+  "rebalance_phase": {
+    "validation_mean_sharpe": 1.4830700798107392,
+    "validation_median_sharpe": 1.483675961670678,
+    "validation_min_sharpe": 1.1135104870383776,
+    "validation_max_sharpe": 1.7708080572625196,
+    "validation_q25_sharpe": 1.3439638977247044,
+    "validation_q75_sharpe": 1.642785752101482,
+    "positive_ratio": 1.0,
+    "sharpe_gt_1_ratio": 1.0,
+    "baseline_sharpe": 1.430109028724725,
+    "baseline_rank": 38,
+    "baseline_percentile": 0.38333333333333336,
+    "v4_offset0_signal_max_abs_diff": 0.0,
+    "diagnostic_offset0_signal_max_abs_diff": 0.0
+  },
+  "symbol_contribution": {
+    "positive_symbols": 37,
+    "negative_symbols": 7,
+    "zero_symbols": 0,
+    "top1_share": 0.07579847255719717,
+    "top3_share": 0.21430657237733813,
+    "top5_share": 0.3282030022224917,
+    "largest_positive_symbol": "BU",
+    "largest_negative_symbol": "BR",
+    "positive_share_denominator": "sum of positive 55/45 combined gross contributions",
+    "contribution_definition": "arithmetic sum over daily executed-weight times forward return",
+    "combo_gross_return_sum": 0.548474888768565,
+    "symbol_attribution_sum": 0.5484748887685649,
+    "attribution_sum_difference": -1.1102230246251565e-16,
+    "aggregate_5bp_roll_cost": 0.08418323359290278,
+    "cost_allocation_note": "Costs are reported only in aggregate and are not allocated to individual symbols."
+  },
+  "sleeve_correlation": {
+    "full_pearson": -0.03180746467533267,
+    "full_spearman": -0.01509264292432786,
+    "validation_pearson": -0.08660586119579895,
+    "validation_spearman": -0.04100794979210862,
+    "rolling63_median": -0.013396820768639857,
+    "rolling63_q10": -0.22065024193373298,
+    "rolling63_q90": 0.1532978373568218,
+    "gross_full_pearson": -0.03352241780396686,
+    "gross_full_spearman": -0.01703725742237667,
+    "gross_validation_pearson": -0.08846888965315142,
+    "gross_validation_spearman": -0.04379985251410124,
+    "gross_rolling63_median": -0.015383212276030185,
+    "dates_aligned": true
+  },
+  "self_checks": {
+    "baseline_consistency_passed": true,
+    "weight_grid_count": 9,
+    "phase_combination_count": 60,
+    "strict_train_last_start": "2021-12-30",
+    "strict_train_last_forward_end": "2021-12-31",
+    "strict_train_forward_end_passed": true,
+    "execution_lag": 1,
+    "sleeve_date_alignment_passed": true,
+    "attribution_reconciliation_abs_diff": 1.1102230246251565e-16,
+    "nan_inf_numeric_cells": 0,
+    "formal_full_sharpe_reference_abs_diff": 1.2821743666791008e-11,
+    "formal_validation_sharpe_reference_abs_diff": 2.472488880300716e-11
+  }
+}
