@@ -1,4 +1,4 @@
-"""Warehouse Strategy v1.0 robustness and attribution module.
+"""Commodity Warehouse Receipt Signals robustness and attribution module.
 
 This file is NOT the formal strategy entry point.  It is used only for the
 frozen v1.0 robustness and attribution checks.  The formal strategy remains
@@ -930,7 +930,7 @@ def main() -> None:
         raise RuntimeError("Baseline Sharpe differs from the frozen references")
     write_json(OUT / "robustness_summary.json", summary)
 
-    print("Warehouse Strategy v1.0 Robustness Freeze")
+    print("Commodity Warehouse Receipt Signals Robustness Freeze")
     print(f"Baseline max abs diff: {consistency['max_abs_diff']:.3e}")
     print(f"Baseline full Sharpe: {baseline_full:.10f}")
     print(f"Baseline validation Sharpe: {baseline_validation:.10f}")
